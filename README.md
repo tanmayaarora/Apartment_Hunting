@@ -15,7 +15,7 @@ the location (the index) of the block that's most optimal for you.
 
 If there are multiple most optimal blocks, your function can return the index of any one of them.
 
-Sample Input
+# Sample Input
 blocks = [
 {
     "gym": false,
@@ -45,5 +45,5 @@ blocks = [
 ]
 reqs = ["gym", "school", "store"]
 
-Sample Output
+# Sample Output
 3 // at index 3, the farthest you'd have to walk to reach a gym, a school, or a store is 1 block; at any other index, you'd have to walk farther
