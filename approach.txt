@@ -1,0 +1,24 @@
+I. Initialise two empty arrays named scores and distances. The scores array will store the number of requirements fulfilled in each block and distances array will be used for storing distance to the block which has maximum number of requirements fulfilled.
+
+II. Iterate through the blocks array and store the details of current block in a variable named block using for loop.
+III. In the same for loop, iterate through the requirements (reqs) array and store the current requirement in a variable named req. An additional variable score is used the value for which indicates how many requirements match in the current block.
+
+IV. In the second for loop, Check whether the current block contains the requirement or not. If the condition is true, score is increased by 1.
+V. After ending the second loop, score is added to the scores array.
+VI. A variable maxelement is initialised with the value of first element in scores array. The variable is used for checking the maximum element in the scores array. Another variable numberofmaxelement is initialised with the value of 0 to check how many number of maximum elements exist in the array
+
+VII. Iterate through the scores array using for loop starting from second element and check if maxelement is less than the current element in scores array. If the condition is true, maxelement becomes the current element in scores array.
+
+VIII. Iterate through the scores array using for loop. This loop is used to calculate how many number of maxelements exist in the scores array. If the current element is equal to the maxelement, numberofmaxelement is increased by 1.
+
+IX. Iterate through the scores array using a nested for loop. A variable distance is initialised with the value of 0 in the outer loop to calculate distance of the current score element with the max element. In the inner loop, check if the current element of the scores array is equal to the maxelement. If the condition is true, distance is added the value of difference of inner loop and outer loop index.
+
+X. In the outer loop, check if the distance is negative. If the condition is true, absolute value of distance is assigned to the distance variable.
+
+XI. The average of distance variable is taken on dividing it by numberfmaxelement and its result is converted into integer for checking the least distance of optimum block with ease. This value is then added to the distances array.
+
+XII. A json variable result is initialised with two keys "Apartment" and "Distance". Apartment is given the value of 0 and Distance is given the value of first element in the distances array.
+
+XIII. Iterate through the distances array using for loop. This loop is used to check the least distance of the optimum block. Inside the loop, check if the current element of distances is less than result["Distance"]. If the condition is true, result["Apartment"] is assigned the value of iterator object (i) and result["Distance"] is equal to the current element of distances (i.e. distances[i]).
+
+XIV. The value of result["Apartment"] is returned.
